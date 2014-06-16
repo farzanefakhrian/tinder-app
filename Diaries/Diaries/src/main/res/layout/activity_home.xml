@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diaries.diaries.home"
+    android:background="@drawable/background">
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/profile"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/publicButton"
+        android:background="#FF4608"
+        android:src="@drawable/profile" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/publicButton"
+        android:background="#FF4608"
+        android:layout_alignBottom="@+id/profile"
+        android:layout_toLeftOf="@+id/refresh"
+        android:src="@drawable/public_pic" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/refresh"
+        android:src="@drawable/refresh"
+        android:layout_alignBottom="@+id/publicButton"
+        android:background="#FF4608"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/khatere"
+        android:background="#FF4608"
+        android:src="@drawable/edit"
+        android:layout_alignTop="@+id/profile"
+        android:layout_toLeftOf="@+id/profile" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/list"
+        android:layout_alignTop="@+id/khatere"
+        android:layout_toLeftOf="@+id/khatere"
+        android:background="#FF4608"
+        android:src="@drawable/list" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/home"
+        android:layout_alignTop="@+id/list"
+        android:layout_toLeftOf="@+id/list"
+        android:background="#ff4608"
+        android:src="@drawable/home" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/welcome"
+        android:layout_below="@+id/list"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:typeface="serif"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="userName"
+        android:id="@+id/userName"
+        android:layout_below="@+id/profile"
+        android:layout_toRightOf="@+id/welcome"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="15dp" />
+
+
+</RelativeLayout>

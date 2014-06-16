@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diaries.diaries.profile"
+    android:background="@drawable/background">
+    <QuickContactBadge
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/quickContactBadge"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/birthday_Text"
+        android:layout_alignEnd="@+id/birthday_Text"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First Name"
+        android:id="@+id/name"
+        android:layout_below="@+id/quickContactBadge"
+        android:layout_alignLeft="@+id/family"
+        android:layout_alignStart="@+id/family"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Last Name"
+        android:id="@+id/family"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Birthday"
+        android:id="@+id/birthday"
+        android:layout_below="@+id/family"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Gender"
+        android:id="@+id/gender"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/birthday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Country"
+        android:id="@+id/country"
+        android:layout_alignBottom="@+id/country_Text"
+        android:layout_alignRight="@+id/birthday"
+        android:layout_alignEnd="@+id/birthday"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Education"
+        android:id="@+id/education"
+        android:layout_below="@+id/country"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="0dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Work"
+        android:id="@+id/work"
+        android:layout_alignBottom="@+id/work_Text"
+        android:layout_alignLeft="@+id/country"
+        android:layout_alignStart="@+id/country"
+        android:layout_marginLeft="0dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="College"
+        android:id="@+id/college"
+        android:layout_alignBottom="@+id/college_text"
+        android:layout_alignLeft="@+id/work"
+        android:layout_alignStart="@+id/work"
+        android:layout_marginLeft="0dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="School"
+        android:id="@+id/school"
+        android:layout_alignBottom="@+id/school_text"
+        android:layout_alignRight="@+id/college"
+        android:layout_alignEnd="@+id/college"
+        android:layout_marginLeft="0dp" />
+
+
+
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_name"
+        android:layout_marginRight="53dp"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_name"
+        android:layout_below="@+id/name"
+        android:layout_alignLeft="@+id/first_name"
+        android:layout_alignStart="@+id/first_name" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/birthday_Text"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="53dp" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/country_Text"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/birthday_Text"
+        android:layout_alignStart="@+id/birthday_Text"
+        android:layout_marginRight="53dp" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/education_text"
+        android:layout_below="@+id/country_Text"
+        android:layout_alignLeft="@+id/country_Text"
+        android:layout_alignStart="@+id/country_Text" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/work_Text"
+        android:layout_below="@+id/education_text"
+        android:layout_alignLeft="@+id/education_text"
+        android:layout_alignStart="@+id/education_text" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/college_text"
+        android:layout_below="@+id/work_Text"
+        android:layout_alignLeft="@+id/work_Text"
+        android:layout_alignStart="@+id/work_Text" />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/school_text"
+        android:layout_below="@+id/college_text"
+        android:layout_alignLeft="@+id/college_text"
+        android:layout_alignStart="@+id/college_text" />
+
+
+
+
+
+
+    <Button
+        android:layout_width="700dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff4608" />
+
+    <RadioGroup
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthday"
+        android:layout_toLeftOf="@+id/quickContactBadge"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/female"
+            android:checked="false"
+            android:layout_below="@+id/country_Text"
+            android:layout_alignLeft="@+id/first_name"
+            android:layout_alignStart="@+id/first_name"
+            android:layout_marginTop="10dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/male"
+            android:checked="false"
+            android:layout_below="@+id/female"
+            android:layout_alignLeft="@+id/female"
+            android:layout_alignStart="@+id/female" />
+    </RadioGroup>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/homeButton"
+        android:src="@drawable/home"
+        android:background="#ff4608"
+        android:layout_above="@+id/name"
+        android:layout_alignRight="@+id/name"
+        android:layout_alignEnd="@+id/name" />
+
+</RelativeLayout>

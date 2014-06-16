@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diaries.diaries.MainActivity"
+    android:background="@drawable/background">
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/sign_in"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="153dp"
+        android:background="#ff4608"
+        style="@style/AppTheme"
+        android:clickable="true"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="#0a0a0a" />
+
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/sign_up"
+        android:layout_below="@+id/sign_in"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#ff4608"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:clickable="true"
+        android:textColor="#080808" />
+
+    <Button
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="about Tinder"
+        android:id="@+id/about"
+        android:layout_below="@+id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#ff4608"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:clickable="true"
+        android:singleLine="false"
+        android:textColor="#0d0804" />
+
+
+</RelativeLayout>

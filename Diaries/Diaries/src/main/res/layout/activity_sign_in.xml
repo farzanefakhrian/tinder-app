@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diaries.diaries.sign_in"
+    android:background="@drawable/background">
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:id="@+id/sign_in2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:clickable="false"
+        android:background="#ff4608" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/user_name_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textColor="#0d0d0d"
+        android:layout_marginLeft="100dp" />
+
+    <EditText
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_text"
+        android:layout_below="@+id/user_name_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/password"
+        android:layout_alignBottom="@+id/password_text"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:textColor="#4A4A4A"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User Name"
+        android:id="@+id/user_name"
+        android:layout_above="@+id/password_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#4A4A4A"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:layout_marginLeft="10dp" />
+
+</RelativeLayout>
